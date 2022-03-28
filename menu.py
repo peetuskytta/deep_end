@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 class Menu():
 	def __init__(self, game):
@@ -84,7 +85,8 @@ class MainMenu(Menu):
 			elif self.state == 'Credits':
 				self.game.curr_menu = self.game.credits
 			elif self.state == 'Quit':
-				return
+				pygame.quit()
+				sys.exit()
 			self.run_display = False
 
 class OptionsMenu(Menu):
@@ -135,5 +137,5 @@ class CreditsMenu(Menu):
 				self.run_display = False
 			self.game.display.fill(self.game.BLACK)
 			self.game.draw_text('Credits', 30, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 20)
-			self.game.draw_text('Made by PSKYTTA', 15, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 10)
+			self.game.draw_text('Made by Pskytta', 15, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 10)
 			self.blit_screen()
