@@ -3,7 +3,7 @@ Python pygame experiment.
 
 Learning object oriented programming with Python pygame library.
 
-Game will be called DeepEnd and it will be a 42 school entry exam related game.
+Used a Youtube tutorial as a reference.
 
 ### Objectives
 - [x] Create a start menu with buttons: Start, Options, Credits, Exit.
